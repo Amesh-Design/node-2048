@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key";  // Use environment variable for security
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/register', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://amesh:<wE1ispOntaJQuySk>@cluster0.2s0e7.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
